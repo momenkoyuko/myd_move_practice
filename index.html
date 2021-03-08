@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Animate.cssの導入</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============Animate.cssのCDNを読み込み===============-->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+<!--基本設定＆アニメーションの回数設定-->
+<p>ページに遷移すると、すぐ現れます</p>
+<p>注意！ブロック要素にしないと動きが違ってしまう</p>
+
+	
+<div class="flex">
+<!--animate__animated animate__fadeInUp-->
+<div class="box animate__animated animate__fadeInUp">すぐ現れるボックス</div>
+<!--animate__animated animate__fadeInUp animate__infinite-->
+<div class="box animate__animated animate__fadeInUp animate__infinite">アニメーション無限ループ</div>
+<!--animate__animated animate__fadeInUp count2-->
+<div class="box animate__animated animate__fadeInUp count2">独自設定：アニメーション回数指定（2回）</div>
+<!--/flex--></div>
+	
+<!--アニメーションがスタートするタイミング設定-->	
+<div class="flex">
+<!--animate__animated animate__fadeInUp animate__delay-1s-->
+<div class="box animate__animated animate__fadeInUp animate__delay-1s">アニメーションが1秒遅れでスタート</div>
+<!--animate__animated animate__fadeInUp animate__delay-2s-->
+<div class="box animate__animated animate__fadeInUp animate__delay-2s">アニメーションが2秒遅れでスタート</div>
+<!--animate__animated animate__fadeInUp animate__delay-3s-->
+<div class="box animate__animated animate__fadeInUp animate__delay-3s">アニメーションが3秒遅れでスタート</div>
+<!--animate__animated animate__fadeInUp animate__delay-4s-->
+<div class="box animate__animated animate__fadeInUp animate__delay-4s">アニメーションが4秒遅れでスタート</div>
+<!--animate__animated animate__fadeInUp animate__delay-5s-->
+<div class="box animate__animated animate__fadeInUp animate__delay-5s">アニメーションが5秒遅れでスタート</div>
+<!--animate__animated animate__fadeInUp delay-time-->
+<div class="box animate__animated animate__fadeInUp delay-time">（CSS独自設定）アニメーションが0.5秒遅れでスタート</div>
+<!--/flex--></div>
+	
+<!--アニメーションの変化時間の設定-->
+<div class="flex">
+<!--animate__animated animate__fadeInUp animate__slow-->
+<div class="box animate__animated animate__fadeInUp animate__slow">アニメーションの変化のスピードが遅い</div>
+<!--animate__animated animate__fadeInUp animate__slower-->
+<div class="box animate__animated animate__fadeInUp animate__slower">アニメーションの変化のスピードがさらに遅い</div>
+<!--animate__animated animate__fadeInUp animate__fast-->
+<div class="box animate__animated animate__fadeInUp animate__fast">アニメーションの変化のスピードが速い</div>
+<!--animate__animated animate__fadeInUp animate__faster-->
+<div class="box animate__animated animate__fadeInUp animate__faster">アニメーションの変化のスピードがさらに速い</div>
+<!--animate__animated animate__fadeInUp change-time-->
+<div class="box animate__animated animate__fadeInUp change-time">（CSS独自設定）アニメーションの変化のスピードが4.5秒</div>
+<!--/flex--></div>
+	
+<!--/wrapper--></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* アニメーションの回数を決めるCSS*/
+
+.count2{  
+	animation-iteration-count: 2;/*必要回数の数字を指定（例）2*/
+}
+
+/* アニメーションスタートの遅延時間を決めるCSS*/
+
+.delay-time{  
+	animation-delay:.5s;/*遅延時間の数字を指定（例）0.5s*/
+}
+
+/* アニメーション自体が変化する時間を決めるCSS*/
+
+.change-time{  
+	animation-duration:4.5s;/*変化させたい時間を数字で指定（例）4.5s*/
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+.wrapper{
+	overflow: hidden;
+}
+
+
+.flex{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.box{
+	width: 220px;
+	padding: 20px;
+	margin:0 20px 20px 0;
+	background: #666;
+	color: #fff;
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}
